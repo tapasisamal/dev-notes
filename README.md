@@ -18,7 +18,7 @@ A notes application where users can securely create, edit, and manage personal n
 ## ⚙️ Setup
 
 ```bash
-git clone <repo-link>
+git clone <https://github.com/tapasisamal/dev-notes>
 cd dev-notes
 npm install
 npm run dev
