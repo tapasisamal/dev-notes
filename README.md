@@ -2,6 +2,10 @@
 
 A notes application where users can securely create, edit, and manage personal notes.
 
+## 🌐 Live Demo
+
+🔗 [Click here to use DevNotes](https://dev-notes-nu.vercel.app)
+
 ## 🚀 Features
 
 * Authentication (Signup & Login)
