@@ -30,7 +30,7 @@ npm run dev
 
 ## 🔐 Environment Variables
 
-Create a `.env` file with your Appwrite configuration:
+Create a .env file in the root of the project and add the following:
 
 ```env
 VITE_APPWRITE_URL=
