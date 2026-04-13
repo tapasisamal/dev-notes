@@ -21,14 +21,14 @@ function Login() {
             if(session) {
                 const userData = await authService.getUser()
                 if(userData) dispatch(authLogin({userData}))
-                navigate("/")
+                navigate("/home")
             }
         } catch(error) {
             setError(error.message)
         }
     }
     return(
-        <div className="flex items-center justify-center w-full"> 
+        <div className="flex items-center justify-center w-full mt-10"> 
 
             <form onSubmit={handleSubmit(login)}
             className="w-full max-w-md space-y-4"

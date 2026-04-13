@@ -26,7 +26,7 @@ function Note() {
     const deleteNote = async () => {
         const result = await noteService.deleteNote(note.$id)
         if(result) {
-            navigate("/")
+            navigate("/home")
         }
     }
 

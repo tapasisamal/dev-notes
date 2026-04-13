@@ -16,7 +16,7 @@ function EditNote() {
                 if(note) {
                     setNote(note)
                 }else{
-                    navigate("/")
+                    navigate("/home")
                 }
             })
         }

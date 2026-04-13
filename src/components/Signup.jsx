@@ -28,7 +28,7 @@ function Signup() {
             if (session) {
                 const userData = await authService.getUser()
                 if (userData) dispatch(authLogin({ userData }))
-                navigate("/")
+                navigate("/home")
             }
         }
         } catch(error) {
@@ -36,7 +36,7 @@ function Signup() {
         }
     }
     return(
-        <div className="flex items-center justify-center w-full"> 
+        <div className="flex items-center justify-center w-full mt-10"> 
 
             <form onSubmit={handleSubmit(signup)}
             className="w-full max-w-md space-y-4"

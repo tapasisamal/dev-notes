@@ -14,7 +14,7 @@ export default function Protected({ children, authentication = true }) {
         if (authentication && !authStatus) {
             navigate("/login");
         } else if (!authentication && authStatus) {
-            navigate("/");
+            navigate("/home");
         } else {
             setLoader(false);
         }

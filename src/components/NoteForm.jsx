@@ -35,24 +35,36 @@ function NoteForm({note}) {
     }
 
     return(
-        <form onSubmit={handleSubmit(submit)} className="flex flex-wrap">
-            <Input
-            label= "Title :"
-            placeholder= "Title"
-            className= "mb-4"
-            {...register("title", {required: true})}
-            />
+    <div className="flex justify-center mt-10">
+        <div className="w-full max-w-2xl">
 
-            <textarea
-            placeholder= "Content"
-            className="w-full mb-4 border p-2 rounded"
-            {...register("content", {required: true})}
-            />
+            <form onSubmit={handleSubmit(submit)} className="flex flex-col">
 
-            <Button type="submit" bgColor={note ? "bg-green-500" : undefined} className="w-full">
-                {note ? "update" : "submit"}
-            </Button>
-        </form>
+                <Input
+                    label="Title :"
+                    placeholder="Title"
+                    className="mb-4"
+                    {...register("title", { required: true })}
+                />
+
+                <textarea
+                    placeholder="Content"
+                    className="w-full mb-4 border p-2 rounded"
+                    {...register("content", { required: true })}
+                />
+
+                <Button
+                    type="submit"
+                    bgColor={note ? "bg-green-500" : undefined}
+                    className="w-full"
+                >
+                    {note ? "update" : "submit"}
+                </Button>
+
+            </form>
+
+        </div>
+    </div>
     )
 }
 

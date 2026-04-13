@@ -11,14 +11,14 @@ function Header() {
             <div className="flex justify-between items-center max-w-5xl mx-auto">
 
                 <h1 className="text-xl font-bold">
-                    <Link to="/">DevNotes</Link>
+                    <Link to="/home">DevNotes</Link>
                 </h1>
 
                 <div className="flex gap-4 items-center">
 
                     {authStatus && (
                         <>
-                            <Link to="/">Home</Link>
+                            <Link to="/home">Home</Link>
                             <Link to="/add-note">Add Note</Link>
                             <LogoutBtn />
                         </>
